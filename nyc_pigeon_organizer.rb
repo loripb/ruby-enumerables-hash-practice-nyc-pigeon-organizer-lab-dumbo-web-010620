@@ -18,7 +18,7 @@ end
 def attribute_check(bird, hash)
   result = []
   hash.each_pair do |pair|
-    result << pair[1]
+    result << pair[0]
   end
   result
 end
