@@ -19,7 +19,7 @@ def attribute_check(bird, hash)
   result = []
   hash.each do |color, names|
     if names.include?(bird)
-      result << color
+      result << color.to_s
     end
   end
   result
