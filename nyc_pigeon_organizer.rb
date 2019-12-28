@@ -10,8 +10,8 @@ def nyc_pigeon_organizer(data)
 
   names.map do |bird|
     result[bird] = {
-      :color => attribute_check(bird, color_from_original_data)
-      :gender => attribute_check(bird, gender_from_original_data)
+      :color => attribute_check(bird, color_from_original_data),
+      :gender => attribute_check(bird, gender_from_original_data),
       :lives => attribute_check(bird, home_from_original_data)
     }
   end
