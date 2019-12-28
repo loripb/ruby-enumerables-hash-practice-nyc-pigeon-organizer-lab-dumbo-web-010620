@@ -18,6 +18,6 @@ end
 def attribute_check(bird, hash)
   result = []
   hash.each do |color, name|
-    result << pair[0]
+    result << color
   end
 end
