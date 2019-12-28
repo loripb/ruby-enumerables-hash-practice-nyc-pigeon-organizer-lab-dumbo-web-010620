@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
 
     puts bird
     att = data.reduce({}) do |x, (cgl, value)|
-
+      cgl
     end
 
   end
