@@ -9,11 +9,11 @@ def nyc_pigeon_organizer(data)
 
   names.map do |bird|
 
-    att = data.reduce({}) do |x, (cgl, value)|
-      cgl
+    data.reduce({}) do |x, (cgl, value)|
+      cgl.each do |att|
+        puts att
     end
 
-    puts att
   end
   pp result
 end
