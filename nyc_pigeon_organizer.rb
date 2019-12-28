@@ -1,18 +1,18 @@
 require 'pp'
 
 def nyc_pigeon_organizer(data)
-  names = data[:gender][:male] + data[:gender][:female]
+  names  = data[:gender][:male] + data[:gender][:female]
   result = {}
 
-  color_from_original_data = data[:color]
+  color_from_original_data  = data[:color]
   gender_from_original_data = data[:gender]
-  home_from_original_data = data[:lives]
+  home_from_original_data   = data[:lives]
 
   names.map do |bird|
     result[bird] = {
-      :color => attribute_check(bird, color_from_original_data),
+      :color  => attribute_check(bird, color_from_original_data),
       :gender => attribute_check(bird, gender_from_original_data),
-      :lives => attribute_check(bird, home_from_original_data)
+      :lives  => attribute_check(bird, home_from_original_data)
     }
   end
   pp result
