@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 
   names.map do |bird|
     result[bird] = {
-      :color => attribute_check(bird, color_from_original_data)  
+      :color => attribute_check(bird, color_from_original_data)
     }
   end
   pp result
@@ -18,8 +18,6 @@ end
 def attribute_check(bird, hash)
   result = []
   hash.each_pair do |pair|
-    if pair[1].include?(bird)
-      result << pair[0]
-    end
+    pair[0]
   end
 end
