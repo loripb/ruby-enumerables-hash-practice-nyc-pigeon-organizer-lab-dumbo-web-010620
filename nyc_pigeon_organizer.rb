@@ -18,7 +18,9 @@ end
 def attribute_check(bird, hash)
   result = []
   hash.each_pair do |pair|
-    result << pair[0]
+    if color.include?(bird)
+      result << color
+    end
   end
   result
 end
