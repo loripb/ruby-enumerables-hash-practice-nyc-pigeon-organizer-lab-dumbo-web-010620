@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
   result = {}
 
   color_from_original_data = data[:color]
-  value = []
+  gender_from_original_data = data[:gender]
+  home_from_original_data = data[:lives]
 
   names.map do |bird|
     result[bird] = {
