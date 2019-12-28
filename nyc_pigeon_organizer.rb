@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
 
     data.reduce({}) do |x, (cgl, value)|
         att = cgl.to_s
-        puts att
+        puts att.class
     end
 
   end
