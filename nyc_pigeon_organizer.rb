@@ -10,8 +10,6 @@ def nyc_pigeon_organizer(data)
   names.map do |bird|
 
     data.reduce({}) do |x, (cgl, value)|
-      cgl.each do |att|
-        puts att
     end
 
   end
